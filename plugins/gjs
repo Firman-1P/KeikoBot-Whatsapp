@@ -1,0 +1,18 @@
+let handler = async (m, { conn, text, usedPrefix, command }) => {
+    let text = `PESANAN TERKIRIM✅`
+    let sewa = `━━「 *PESANAN* 」━━
+    Dari : ${m}
+    Sewa Paket 1 Rp 5.000
+    
+    _📮 JANGAN MENOLAK REZEKI_`
+    conn.sendButt(m.chat, sewa, 'Next', ".hacker", m)
+}
+    conn.reply(m.chat, text, null)
+}
+handler.help = ['']
+handler.tags = ['mainif() {
+    
+}']
+handler.command = /^(buysewa1)$/i
+
+module.exports = handler
